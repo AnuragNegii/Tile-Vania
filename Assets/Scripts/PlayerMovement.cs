@@ -9,7 +9,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
     [SerializeField] Vector2 deathKick = new Vector2(10f,10f);
-
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
     float gravityScaleAtStart;
 
     Vector2 moveInput;
@@ -111,8 +112,13 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log(moveInput);
     }
 
+    void OnFire(InputValue valur){
+        if(!isAlive){return;}
+        Instantiate(bullet, gun.position, transform.rotation);
+    }
+
     void Die(){
-        if(myBodyCollider2d.IsTouchingLayers(LayerMask.GetMask("enemies"))){
+        if(myBodyCollider2d.IsTouchingLayers(LayerMask.GetMask("enemies", "Hazards"))){
             isAlive = false;
             mySpriteRenderer.color = new Color(1,0,0,1);
             myAnimator.SetTrigger("Dying");
