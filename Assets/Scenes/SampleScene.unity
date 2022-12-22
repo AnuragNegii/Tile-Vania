@@ -594,7 +594,7 @@ TilemapRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.016129017, y: 0.016129017, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -11595,7 +11595,7 @@ TilemapRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.016129017, y: 0.016129017, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -30205,7 +30205,7 @@ TilemapRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.016129017, y: 0.016129017, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -30602,6 +30602,26 @@ PrefabInstance:
     - target: {fileID: 5967841381240823736, guid: b96a663833adce94b92600c0bc022c88, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967841381240823737, guid: b96a663833adce94b92600c0bc022c88, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967841381240823737, guid: b96a663833adce94b92600c0bc022c88, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967841381240823737, guid: b96a663833adce94b92600c0bc022c88, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967841381436529894, guid: b96a663833adce94b92600c0bc022c88, type: 3}
+      propertyPath: deathKick.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5967841381436529894, guid: b96a663833adce94b92600c0bc022c88, type: 3}
+      propertyPath: deathKick.y
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7704018237601999156, guid: b96a663833adce94b92600c0bc022c88, type: 3}
       propertyPath: m_Material
